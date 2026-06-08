@@ -1,0 +1,39 @@
+local UI = require("openmw.ui")
+local Util = require("openmw.util")
+local MorrowindWindow = require("Scripts.MorrowindWindow")
+
+return MorrowindWindow(
+  500,
+  200,
+  0,
+  0,
+  0.75,
+  {
+    {
+      type = UI.TYPE.Image,
+      props = {
+        resource = UI.texture({
+          path = "white"
+        }),
+        size = Util.vector2(50,50),
+      },
+      content = UI.content({
+        {
+          props = {
+            padding = 15,
+            relativeSize = Util.vector2(1,1)
+          },
+          content = UI.content({
+            {
+              type = UI.TYPE.Text,
+              props = {
+                text = "Hello World",
+                textcolor = Util.color.rgb(1,0,0)
+              }
+            }
+          })
+        },
+      })
+    }
+  }
+)

@@ -29,7 +29,7 @@ local descriptionText = {
 };
 
 local topTextWindow = MorrowindWindow(
-  500,
+  600,
   125,
   0,
   0,
