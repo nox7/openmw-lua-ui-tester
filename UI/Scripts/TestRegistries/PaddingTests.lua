@@ -20,8 +20,18 @@ return {
     require("Scripts.Padding.ContainerWithImagePadding")
   };
   {
+    "Autosized Text With Padding",
+    "An auto-sized text widget with 20px uniform padding.",
+    require("Scripts.Padding.AutoSizedTextWithPadding")
+  };
+  {
     "Text With Padding",
-    "A text element with 20px uniform padding. This will have no effect on the text's size or position since padding does not affect text elements, but it also should not cause any errors.",
+    "A manually-sized text widget with 20px uniform padding.",
     require("Scripts.Padding.TextWithPadding")
+  };
+  {
+    "Text Edit With Padding",
+    "A text edit widget with 20px uniform padding.",
+    require("Scripts.Padding.TextEditWithPadding")
   };
 }

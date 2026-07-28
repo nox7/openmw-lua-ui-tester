@@ -10,10 +10,10 @@ return MorrowindWindow(
   0.75,
   {
     {
-      type = UI.TYPE.Text,
+      type = UI.TYPE.TextEdit,
       props = {
         autoSize = false,
-        size = Util.vector2(300, 100),
+        size = Util.vector2(100, 100),
         padding = Util.vector4(20,20,20,20),
         textColor = Util.color.rgb(1,1,1),
         text = "Hello world"
