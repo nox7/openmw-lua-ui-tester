@@ -29,8 +29,9 @@ return MorrowindWindow(
         {
           type = UI.TYPE.Image,
           props = {
+            color = Util.color.rgb(1,0,0),
             resource = UI.texture({
-              path = "black"
+              path = "white"
             }),
             size = Util.vector2(50,50)
           }
@@ -47,8 +48,9 @@ return MorrowindWindow(
         {
           type = UI.TYPE.Image,
           props = {
+            color = Util.color.rgb(1,0,0),
             resource = UI.texture({
-              path = "black"
+              path = "white"
             }),
             size = Util.vector2(50,50)
           }

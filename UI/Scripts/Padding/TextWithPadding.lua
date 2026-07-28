@@ -12,7 +12,7 @@ return MorrowindWindow(
     {
       type = UI.TYPE.Text,
       props = {
-        padding = 20,
+        padding = Util.vector4(20,20,20,20),
         textColor = Util.color.rgb(1,1,1),
         text = "Hello world"
       },

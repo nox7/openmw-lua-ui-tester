@@ -18,7 +18,7 @@ return MorrowindWindow(
         gap = 20,
         wrap = true,
         align = UI.ALIGNMENT.Center,
-        padding = 30,
+        padding = Util.vector4(10,10,10,10),
       },
       content = UI.content({
         {
@@ -28,14 +28,15 @@ return MorrowindWindow(
               path = "white"
             }),
             size = Util.vector2(50,50),
-            padding = 15
+            padding = Util.vector4(15,15,15,15)
           }
         },
         {
           type = UI.TYPE.Image,
           props = {
+            color = Util.color.rgb(1,0,0),
             resource = UI.texture({
-              path = "black"
+              path = "white"
             }),
             size = Util.vector2(72,68)
           },
@@ -43,9 +44,7 @@ return MorrowindWindow(
             {
               props = {
                 relativeSize = Util.vector2(1,1),
-                padding = {
-                  top = 40,
-                },
+                padding = Util.vector4(0,40,0,0),
               },
               content = UI.content({
                 {
@@ -71,8 +70,9 @@ return MorrowindWindow(
         {
           type = UI.TYPE.Image,
           props = {
+            color = Util.color.rgb(1,0,0),
             resource = UI.texture({
-              path = "black"
+              path = "white"
             }),
             size = Util.vector2(50,25)
           }
@@ -89,8 +89,9 @@ return MorrowindWindow(
         {
           type = UI.TYPE.Image,
           props = {
+            color = Util.color.rgb(1,0,0),
             resource = UI.texture({
-              path = "black"
+              path = "white"
             }),
             size = Util.vector2(50,50)
           }

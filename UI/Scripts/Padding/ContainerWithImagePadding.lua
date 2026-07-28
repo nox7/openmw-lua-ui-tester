@@ -12,9 +12,7 @@ return MorrowindWindow(
     {
       type = UI.TYPE.Container,
       props = {
-        padding = {
-          left = 30
-        },
+        padding = Util.vector4(30,0,0,0),
       },
       content = UI.content({
         {

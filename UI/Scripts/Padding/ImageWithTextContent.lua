@@ -16,14 +16,14 @@ return MorrowindWindow(
           path = "white"
         }),
         size = Util.vector2(50,50),
-        padding = 15
+        padding = Util.vector4(15,15,15,15)
       },
       content = UI.content({
         {
           type = UI.TYPE.Text,
           props = {
             text = "Hello World",
-            textcolor = Util.color.rgb(1,0,0)
+            textColor = Util.color.rgb(1,0,0)
           }
         }
       })
