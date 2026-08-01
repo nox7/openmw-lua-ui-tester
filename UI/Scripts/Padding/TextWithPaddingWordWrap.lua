@@ -1,0 +1,24 @@
+local UI = require("openmw.ui")
+local Util = require("openmw.util")
+local MorrowindWindow = require("Scripts.MorrowindWindow")
+
+return MorrowindWindow(
+  200,
+  300,
+  0,
+  0,
+  0.75,
+  {
+    {
+      type = UI.TYPE.Text,
+      props = {
+        autoSize = false,
+        wordWrap = true,
+        size = Util.vector2(125, 100),
+        padding = Util.vector4(20,20,20,20),
+        textColor = Util.color.rgb(1,1,1),
+        text = "Hello world! Hello world!"
+      },
+    },
+  }
+)

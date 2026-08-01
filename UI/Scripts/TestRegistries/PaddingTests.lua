@@ -30,6 +30,11 @@ return {
     require("Scripts.Padding.TextWithPadding")
   };
   {
+    "Text With WordWrap & Padding",
+    "A manually-sized text widget with 20px uniform padding and wordwrap set to true.",
+    require("Scripts.Padding.TextWithPaddingWordWrap")
+  };
+  {
     "Text Edit With Padding",
     "A text edit widget with 20px uniform padding.",
     require("Scripts.Padding.TextEditWithPadding")

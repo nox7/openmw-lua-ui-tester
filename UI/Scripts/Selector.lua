@@ -19,16 +19,15 @@ local titleText = {
 };
 local descriptionText = {
   type = UI.TYPE.Text,
+  external = {
+    stretch = 1,
+  },
   props = {
     text = "Content and text that describes some stuff about something else.",
     textSize = 16,
     textColor = Util.color.commaString(Core.getGMST("FontColor_color_normal")),
     textAlignH = UI.ALIGNMENT.Center,
-    multiline = true,
     wordWrap = true,
-    autoSize = false,
-    relativeSize = Util.vector2(1,0),
-    size = Util.vector2(0, 75),
   },
 };
 
@@ -44,7 +43,7 @@ local topTextWindow = MorrowindWindow(
       props = {
         autoSize = false,
         relativeSize = Util.vector2(1,1),
-        align = UI.ALIGNMENT.Center,
+        align = UI.ALIGNMENT.Start,
         arrange = UI.ALIGNMENT.Center,
         padding = Util.vector4(10,10,10,10)
       },
