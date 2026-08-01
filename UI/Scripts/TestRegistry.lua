@@ -8,4 +8,8 @@ for _, v in ipairs(require("Scripts.TestRegistries.PaddingTests")) do
   table.insert(merged, v);
 end
 
+for _, v in ipairs(require("Scripts.TestRegistries.GridTests")) do
+  table.insert(merged, v);
+end
+
 return merged;

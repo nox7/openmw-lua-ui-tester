@@ -13,7 +13,7 @@ return function(width, height, x, y, alpha, content)
     template = MWUI.templates.bordersThick,
     props = {
       size = Util.vector2(width, height),
-      position = Util.vector2(x, y),
+      position = Util.vector2(x, y)
     },
     content = UI.content({
       {

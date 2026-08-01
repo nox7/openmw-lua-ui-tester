@@ -6,11 +6,15 @@ local MorrowindWindow = require("Scripts.MorrowindWindow")
 
 local titleText = {
   type = UI.TYPE.Text,
+  external = {
+    stretch = 1,
+  },
   props = {
     text = "Horizontal Test",
     textSize = 22,
     textColor = Util.color.commaString(Core.getGMST("FontColor_color_normal")),
     textAlignH = UI.ALIGNMENT.Center,
+    wordWrap = true,
   }
 };
 local descriptionText = {
@@ -42,6 +46,7 @@ local topTextWindow = MorrowindWindow(
         relativeSize = Util.vector2(1,1),
         align = UI.ALIGNMENT.Center,
         arrange = UI.ALIGNMENT.Center,
+        padding = Util.vector4(10,10,10,10)
       },
       content = UI.content({
         titleText,

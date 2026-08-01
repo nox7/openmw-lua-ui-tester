@@ -24,7 +24,7 @@ local function CycleUI()
   end
 
   local nextUI = UIsToTest[CurrentIndex];
-  TitleWidget.props.text = nextUI[1];
+  TitleWidget.props.text = "(" .. CurrentIndex .. "/" .. #UIsToTest .. ") " .. nextUI[1];
   DescriptionWidget.props.text = nextUI[2];
   Selector:update();
 
